@@ -1,5 +1,10 @@
 body {
   text-align: center;
-  background-color: #D4F5F5;
-  color: #554348
+  background-color: rgb(236, 235, 232);
+  color: #313335;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  padding: 5%;
 }
