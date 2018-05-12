@@ -16,8 +16,19 @@ class App < Sinatra::Base
     erb :reversed
   end
 
-  get '/friends' do
-    # Write your code here!
 
+  get '/friends' do
+    # inside the route, assign an array (rather than a string) to an instance variable, called @friends
+    @friends = ['Emily Wilding Davison', 'Harriet Tubman', 'Joan of Arc', 'Malala Yousafzai', 'Sojourner Truth']
+    # render the friends.erb page
+    erb :friends
   end
 end
+
+=begin
+
+  In ERB templates,
+  <%= contents %> will display the evaluated expression within the opening and closing tags.
+  <% contents %> will evaluate the contents of the expression, but will not display them.
+
+=end
